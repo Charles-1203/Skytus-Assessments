@@ -10,6 +10,3 @@ if (points >= 16 and nrr > 0) or (points >= 14 and wins >= 7):
     print(team, "is likely to qualify for IPL playoffs")
 else:
     print(team, "may not qualify")
-
-
-# 10. Divide two numbers and print the quotient and remainder separately.
