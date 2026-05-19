@@ -49,3 +49,7 @@ check=tup3.issubset(tup4)
 print(check)
 
 # Convert a list with duplicate values into a set to remove duplicates.
+
+list1=[1, 2, 3, 4, 5, 2, 3, 1]
+set1=set(list1)
+print(set1)

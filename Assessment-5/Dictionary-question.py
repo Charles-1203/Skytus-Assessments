@@ -36,7 +36,7 @@ else:
 
 # Count word frequency in a given string using a dictionary.
 
-text="hi , My name is Charles and I am a student in IT department. I am 21 years old."
+text="Hi , My name is Charles and I am a student in IT department. I am 21 years old."
 word_freq={}
 for word in text.split():
     if word in word_freq:
@@ -45,9 +45,25 @@ for word in text.split():
         word_freq[word] = 1
 print(word_freq)
 
+
 # Find the key with the maximum value in a dictionary.
 
 
+max_key=max(dic1, key=dic1.get)
+print("Key with maximum value:", max_key)
+
 # Reverse keys and values in a dictionary.
+
+reversed_dic={value: key for key, value in dic1.items()}
+print(reversed_dic)
+
 # Update the value for a specific key.
+
+dic1["age"]=22
+print(dic1)
+
 # Convert a list of tuples into a dictionary.
+
+tup7=[("name", "Charles"), ("age", 21), ("department", "IT")]
+dic3=dict(tup7)
+print(dic3)
