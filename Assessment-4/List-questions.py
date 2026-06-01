@@ -17,12 +17,15 @@ print("Updated list of favorite movies: ",favorite_movies)
 favorite_movies.pop(0)
 print("List after removing the first movie: ",favorite_movies)
 
+
+
 # Sort a list of numbers in ascending order.
 
 
 numbers = [5, 2, 9, 1, 5, 6]
 numbers.sort()
 print("Sorted numbers: ",numbers)
+
 
 
 # Reverse a list.
