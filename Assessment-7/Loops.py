@@ -74,3 +74,14 @@ for i in range(1, 4):
     print(" " * (4- i) + "*" * (2 * i - 1))
 
 # Find all divisors of a number.
+
+n=int(input("enter the number:"))
+i=0
+list=[]
+
+for i in range (1,n+1):
+    if(n%i==0):
+        list.append(i)
+
+print(f"Divisor of {n} are:")
+print(list)
