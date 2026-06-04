@@ -73,5 +73,32 @@ else:
 
 
 # Write a program to merge the contents of two text files into a third file.
+
+file1 = "file1.txt" 
+file2 = "file2.txt"
+merged_file = "merged_file.txt"
+with open(file1, "r") as f1, open(file2, "r") as f2, open(merged_file, "w") as mf:
+    contents1 = f1.read()
+    contents2 = f2.read()
+    mf.write(contents1 + "\n" + contents2)
+f1.close()
+f2.close()
+mf.close()
+
 # Write a program to read a CSV file and display its content in a formatted way.
+
+import csv
+csv_file = "data.csv"
+with open(csv_file, "r") as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print("\t".join(row))
+file.close()
+
+
 # Write a program to back up a file by copying its contents into another file.
+
+import shutil
+source_file = "file.txt"
+backup_file = "file_backup.txt"
+shutil.copy(source_file, backup_file)
